@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            header{
+                
+            border-top: 1px dashed blue;
+           
+            }
+
+            legend{
+
+                border: 1px solid #00f;
+                background-color: #00f;
+                
+            }
+            .enviar{
+                background-color: #00f;
+            }
+
+            fieldset{
+
+                width: 35vw;
+                height: 45vh;
+            }
+
+            footer{
+                margin: 0 auto;
+                width: 100vw;
+                height: 10vh;
+                background-color: #00f;
+                padding-bottom: 0;
+                display: flex; 
+    
+            }
+
+            .pie{
+                color: white;
+                font-size: 10px;
+                width: 30vw; 
+                 height: 15vh; 
+                display: flex; 
+                justify-content:space-around; 
+                
+            }
+
+            .leido{
+
+                display: flex;
+                justify-content: flex-start;
+            }
+    </style>
+
+</head>
+<body>
+    
+        <header>
+                    <h1> Hazte Socio</h1>
+
+            <p> 
+                Colabora con Petinder naciendote socio por solo 15 euros mensuales.Con muy poco puedes ayudar mucho
+                a nuestros amigos peludos.Ademas puedes comprar nuestra exclusiva camiseta por solo 10euros que se añadiran al primer pago.
+                Rellena el siguiente formulario para unirse a nosotros:
+            </p>
+        </header>
+
+
+    <form>
+        <fieldset >
+            <legend>Direccion</legend>
+            <label for="domicilio">Calle y número *</label><br>
+            <input  id="domicilio"type="text" name="domicilio" placeholder="Calle y número" required="required"><br>
+            <br>
+            <label for="ciuda">Ciudad *</label><br>
+            <input  id="Ciudad"type="text" name="ciudad" placeholder="Ciudad" required="required"><br>
+            <br>
+            <label for="provincia">Provincia *</label><br>
+            <input  id="provincia"type="text" name="ciudad" placeholder="Provincia" required="required"><br>
+            <br>
+            <label for="num">Codigo Postal*</label><br>
+            <input  id="postal" type="number" name="postal" placeholder="Codigo Postal" pattern="[0-9]{5}" min="5"  title="Codigo postal" required="required"><br>
+            <br>
+            <Label>Pais</Label><br>
+        <select>
+            
+            <optgroup label="Pais" placehoder="Selecciona">
+
+                <option value="España" >España </option>
+                <option value="Portugal">Portugal</option>
+            </optgroup>
+
+            </select><br>
+
+            
+        </fieldset>
+        <br>
+        <form class="leido">
+            <p>* Todos los campos marcados son obligatorio</p><br>
+            
+            <input type="checkbox" value="41" name ="leido" id="leido"><br>
+            <label for="leido">He leido y acepto la politica de privacidad y las condiciones de uso</label><br> 
+            
+       
+        <input type="submit" class="enviar">  
+
+    </form>
+        
+        <br/>
+
+        <footer>
+            <div class="pies">
+            <p class="pie"> 2021 @ Palinder David salguero Gomez Asigntura HTML y CSS</p>
+            </div>
+        </footer>
+</form>
+</body>
+</html>
